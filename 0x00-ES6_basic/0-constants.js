@@ -1,4 +1,4 @@
-// Const or let?
+// Variable scope
 //
 export function taskFirst() {
   const task = 'I prefer const when I can.';
