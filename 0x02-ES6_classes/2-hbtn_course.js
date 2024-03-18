@@ -1,4 +1,4 @@
-// New class
+// A course, getters and setters
 //
 export default class HolbertonCourse {
   constructor(name, length, students) {
@@ -15,7 +15,7 @@ export default class HolbertonCourse {
     if (typeof newName !== 'string') {
       throw new TypeError('name must be a string');
     }
-    this._name = this.newName;
+    this._name = newName;
   }
 
   get length() {
@@ -26,7 +26,7 @@ export default class HolbertonCourse {
     if (typeof newLength !== 'number') {
       throw new TypeError('length must be a number');
     }
-    this._length = this.newLength;
+    this._length = newLength;
   }
 
   get students() {
@@ -37,6 +37,6 @@ export default class HolbertonCourse {
     if (!Array.isArray(newStudents)) {
       throw new TypeError('students must be an array');
     }
-    this._students = this.newStudents;
+    this._students = newStudents;
   }
 }
